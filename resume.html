@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>เรซูเม่ - ไชโย แสงใส</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --light-color: #e5eff1;
+      --dark-color: #333;
+      --accent-color: #224143;
+      --background-color: #a0b6b3;
+      --padding-content: 10px;
+      --base-font-size: 0.9em;
+      --base-font-weight: 400;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      color: var(--dark-color);
+      margin: 0;
+      padding: 0;
+      background: var(--background-color);
+      font-size: var(--base-font-size);
+    }
+
+    .container {
+      max-width: 794px; /* A4 width in px */
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .resume-header {
+      display: flex;
+      align-items: center;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .resume-header img {
+      width: 80px;
+      height: 100px;
+      border-radius: 10px;
+      border: 1.5px dashed var(--light-color);
+      margin-right: 15px;
+    }
+
+    .resume-contact p {
+      margin: 2px 0;
+    }
+
+    .resume-content {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    .resume-content-left,
+    .resume-content-right {
+      flex: 1;
+      padding: var(--padding-content);
+    }
+
+    .resume-content-left {
+      border-right: 1px dashed var(--accent-color);
+    }
+
+    h1 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+    }
+
+    h3 {
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 10px 0 5px;
+      font-size: 1em;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .company-name {
+      font-weight: 600;
+      font-size: 1em;
+      color: var(--accent-color);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+        font-size: 0.8em;
+      }
+
+      .container {
+        border: none;
+        padding: 10px;
+        max-width: 100%;
+      }
+
+      .resume-header {
+        padding: 5px;
+        flex-direction: row;
+        border-radius: 0;
+      }
+
+      .resume-header img {
+        width: 70px;
+        height: 90px;
+        margin-right: 10px;
+      }
+
+      .resume-content {
+        flex-direction: row;
+      }
+
+      .resume-content-left,
+      .resume-content-right {
+        padding: 10px;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 1cm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume-header">
+      <img src="images/IMG1.png" alt="ไชโย แสงใส" />
+      <div>
+        <h1>ไชโย แสงใส</h1>
+        <div class="resume-contact">
+          <p><i class="fas fa-phone"></i> <a href="tel:0628886319">062-888-6319</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:saengsaichaiyo@gmail.com">saengsaichaiyo@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-content">
+      <div class="resume-content-left">
+        <h3>ประวัติส่วนตัว</h3>
+        <p>ชื่อ: ไชโย แสงใส</p>
+        <p>วันเกิด: 29 กันยายน 2519</p>
+        <p>อายุ: 48 ปี</p>
+        <p>ศาสนา: พุทธ</p>
+        <p>สัญชาติ: ไทย</p>
+        <p>สถานภาพ: โสด</p>
+
+        <h3>ทักษะที่เกี่ยวกับงาน</h3>
+        <ul>
+          <li>อาหารไทย-ยุโรป-ฟิวชั่น</li>
+          <li>ทักษะการบริหารทีม</li>
+          <li>Multitasking (ทำงานหลายอย่างพร้อมกันได้ดี)</li>
+          <li>ทำงานภายใต้ความกดดันได้</li>
+          <li>แก้ไขปัญหาเฉพาะหน้าได้อย่างมีประสิทธิภาพ</li>
+          <li>ควบคุมคุณภาพอาหาร</li>
+          <li>การจัดเตรียมวัตถุดิบ</li>
+          <li>ใช้เครื่องครัวเฉพาะทาง เช่น ซูวีด์ / แว็คคั่ม</li>
+          <li>จัดทำ Recipe มาตรฐาน และคำนวณต้นทุน</li>
+        </ul>
+
+        <h3>ทักษะเพิ่มเติม</h3>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>ภาษาไทย (แม่ภาษา), ภาษาอังกฤษ (พื้นฐาน)</li>
+        </ul>
+      </div>
+
+      <div class="resume-content-right">
+        <h3>การศึกษา</h3>
+        <p><b>มัธยมศึกษาตอนปลาย (ม.6)</b><br />
+          <i>ศูนย์การศึกษานอกโรงเรียน จังหวัดอุบลราชธานี</i><br />
+          <small>ปีที่จบ: 2540</small></p>
+
+        <h3>ประสบการณ์การทำงาน</h3>
+        <p><b class="company-name">Craft Estate</b><br />
+          <small><i>Chef de partie</i> | 16 ต.ค. 2566 – 31 ต.ค. 2567</small></p>
+
+        <p><b class="company-name">Bulwark ราชพฤกษ์</b><br />
+          <small><i>Chef de partie</i> | 2 พ.ย. 2564 – 22 มิ.ย. 2565</small></p>
+
+        <p><b class="company-name">The Salares Coffee Bar and Restaurant</b><br />
+          <small><i>Chef de partie</i> | 1 มี.ค. 2562 – 31 ธ.ค. 2562</small></p>
+
+        <p><b class="company-name">บิสโทร เดอ ฟลอร่า</b><br />
+          <small><i>Chef de partie</i> | 23 ก.ค. 2560 – 31 ธ.ค. 2561</small></p>
+
+        <p><b class="company-name">ฟาร์มรักดี</b><br />
+          <small><i>Head Chef</i> | 6 ก.พ. 2558 – 31 พ.ค. 2560</small></p>
+
+        <h3>งานอดิเรก</h3>
+        <ul>
+          <li>ทดลองสูตรอาหารใหม่ ดูรายการทำอาหารต่างประเทศ</li>
+          <li>อ่านหนังสือเกี่ยวกับวัตถุดิบและเทคนิคการทำอาหาร</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
