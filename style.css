@@ -1,136 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
-
 :root {
-    --light-color: #e5eff1;
-    --dark-color: #5a5a5a;
-    --accent-color: #224143;
-    --background-color: #a0b6b3;
-    --padding-content: 15px;
-    --base-font-size: 1em;
-    --base-font-weight: 400;
-}
+    --bg-main: #e6e8ea;       /* พื้นหลังหลัก */
+    --box-bg: #d1d5db;        /* กล่องพื้นหลัง */
+    --highlight: #6b7280;     /* สีเน้น / header */
+    --text-main: #1f2937;     /* สีตัวหนังสือ */
+    --accent: #9ca3af;        /* สีขอบหรือเงา */
+    --green-bar: #6ee7b7;     /* สำหรับกราฟภาษา */
+  }
 
-body {
-    background-color: var(--background-color);
-    font-family: 'Prompt', sans-serif;
-    color: var(--dark-color);
-    margin: 0;
-    padding: 0;
-    font-size: var(--base-font-size);
-    font-weight: var(--base-font-weight);
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  background: var(--bg-main);
+  padding: 3px 5px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-main);
 }
 
 .container {
-    margin: auto;
-    max-width: 600px;
-    border: 1px solid #ccc; /* กรอบบาง ๆ สีเทาอ่อน */
-    border-radius: 10px;
-    background-color: #c9cecc;
-    padding: 20px;
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-
-.resume-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--accent-color);
-    color: var(--light-color);
-    height: 150px;
-    margin-top: 5px;
-    border-radius: 10px;
-    padding: 10px;
+.profile-left, .resume-content {
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background: var(--box-bg);
+  flex: 1 1 100%;
 }
 
-.resume-header-picture {
-    width: 100px;
-    height: 130px;
-    margin-right: 15px;
-    margin-left: 15px;
-    border-radius: 20px;
-    border: 1.5px dashed var(--light-color);
-    z-index: 1;
+@media (min-width: 768px) {
+  .profile-left {
+    width: 30%;
+  }
+
+  .resume-content {
+    width: 70%;
+  }
 }
 
-/* ตั้งค่าขนาดและน้ำหนักตัวอักษรให้เหมือนกัน */
-h1, h2, h4, p, ul {
-    margin: 0;
-    font-size: var(--base-font-size);
-    font-weight: var(--base-font-weight);
+.profile-header,
+.address-box, .portfolio-box,
+.edu-box, .exp-box {
+  background-color: var(--highlight);
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 16px;
 }
 
-h1, h2, h4 {
-    text-transform: uppercase;
+.level {
+  background-color: var(--green-bar);
 }
-
-h4 {
-    text-align: center;
-    margin: 10px 0;
-    color: #fff;
-    background-color: var(--accent-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul {
-    padding-left: 15px;
-}
-
-table {
-    width: 100%;
-}
-
-.resume-content {
-    display: flex;
-    margin-top: 25px;
-    background-color: var(--light-color);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.resume-content-left, .resume-content-right {
-    flex: 1;
-    padding: var(--padding-content);
-}
-
-.resume-content-left {
-    border-right: 1.5px dashed var(--accent-color);
-}
-
-/* .resume-exp-p {
-    margin-top: 10px;
-    font-size: var(--base-font-size);
-    color: black;
-} */
-
-/* media query */
-@media screen and (max-width: 600px) {
-    .resume-header {
-        margin-top: 20px;
-    }
-    .resume-header-picture {
-        width: 90px;
-        height: 90px;
-        border-width: 4px;
-        border-radius: 15px;
-    }
-    .resume-content {
-        flex-direction: column;
-    }
-}
-
-.company-name {
-    color: var(--accent-color);
-    font-weight: 600;
-    font-size: 0.7em;
-}
-
-
-
-
-
-
