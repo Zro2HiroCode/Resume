@@ -97,10 +97,10 @@ body {
     width: 15px;
     height: 2px;
     border-radius: 5%;
-    background-color: #9ceff5; /* สีเทาอ่อนสำหรับช่องว่าง */
+    background-color: #20383a; /* สีเทาอ่อนสำหรับช่องว่าง */
   }
   
   .dot.filled {
-    background-color: #47dd2c; /* สีเขียวสำหรับระดับที่มี */
+    background-color: #319c1e; /* สีเขียวสำหรับระดับที่มี */
   }
   
