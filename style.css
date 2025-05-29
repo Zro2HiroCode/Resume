@@ -19,7 +19,7 @@ body {
     flex: 0 0 250px;
   }
   .profile-img {
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
     border: 1.5px dashed #283b44;
     margin-bottom: 20px;
