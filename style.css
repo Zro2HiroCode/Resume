@@ -103,4 +103,9 @@ body {
   .dot.filled {
     background-color: #319c1e; /* สีเขียวสำหรับระดับที่มี */
   }
+
+  .sample-img {
+    width: 150;
+    height: auto;
+  }
   
