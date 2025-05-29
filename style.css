@@ -19,7 +19,7 @@ body {
     flex: 0 0 250px;
   }
   .profile-img {
-    width: 60%;
+    width: 100%;
     border-radius: 10px;
     border: 1.5px dashed #283b44;
     margin-bottom: 20px;
@@ -106,7 +106,7 @@ body {
 
   .foods-img {
     width: 250px;
-    height: 150px;
+    height: 200px;
   }
 
   
