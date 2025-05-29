@@ -19,13 +19,13 @@ body {
     flex: 0 0 250px;
   }
   .profile-img {
-    width: 50%;
+    width: 65%;
     border-radius: 10px;
     border: 1.5px dashed #283b44;
     margin-bottom: 20px;
   }
   .sample-img {
-    width: 80%;
+    width: 65%;
     border-radius: 5px;
     margin-bottom: 10px;
   }
