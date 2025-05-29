@@ -104,4 +104,9 @@ body {
     background-color: #319c1e; /* สีเขียวสำหรับระดับที่มี */
   }
 
+  .foods-img {
+    width: 250px;
+    height: 200px;
+  }
+
   
