@@ -56,8 +56,12 @@ body {
   ul {
     padding-left: 20px;
   }
-  .contact, .section {
+  .contact {
     margin-top: 15px;
+  }
+
+  .section {
+    padding: 10px;
   }
 
   .exp {
