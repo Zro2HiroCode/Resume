@@ -109,31 +109,3 @@ ul {
     height: auto;
   }
 }
-
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .profile-left, .resume-content {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 0.95em;
-  }
-
-  p, li {
-    font-size: 0.85em;
-  }
-
-  .profile-img, .sample-img {
-    width: 100%;
-  }
-}
