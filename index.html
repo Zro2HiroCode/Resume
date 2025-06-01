@@ -5,6 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>เรซูเม่ - ไชโย แสงใส</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      gap: 20px;
+    }
+    .profile-left {
+      flex: 0 0 25%;
+    }
+    .resume-content {
+      flex: 0 0 75%;
+    }
+    .profile-img, .sample-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0.2em;
+    }
+    h3 {
+      font-size: 1.1em;
+      background-color: #224143;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin: 20px 0 10px;
+    }
+    p, li {
+      font-size: 0.85em;
+      line-height: 1.4;
+      margin: 3px 0;
+    }
+    ul {
+      padding-left: 18px;
+      margin: 0 0 10px;
+    }
+    .language-skill p {
+      margin: 0.3em 0 0.2em;
+    }
+    .level {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 0.6em;
+    }
+    .dot {
+      width: 14px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: #ccc;
+    }
+    .dot.filled {
+      background-color: #4caf50;
+    }
+    @media print {
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        font-size: 11px;
+      }
+      .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 10px;
+        page-break-inside: avoid;
+      }
+      img.sample-img {
+        max-height: 100px;
+        object-fit: cover;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -20,14 +104,9 @@
         <img class="sample-img" src="images/ทานเล่น (1).png" alt="อาหาร 1" />
         <img class="sample-img" src="images/กริลล์ (3).png" alt="อาหาร 2" />
         <img class="sample-img" src="images/พาสต้า (5).png" alt="อาหาร 3" />
+        <img class="sample-img" src="images/พาสต้า (8)" alt="อาหาร 4" />
       </div>
-      <div class="section">
-        <h3>งานอดิเรก</h3>
-        <ul>
-          <li>ทดลองสูตรอาหารใหม่</li>
-          <li>อ่านหนังสือเกี่ยวกับวัตถุดิบ</li>
-        </ul>
-      </div>
+      
     </div>
 
     <!-- ขวา -->
@@ -48,11 +127,21 @@
       <div class="section">
         <h3>ประสบการณ์ทำงาน</h3>
         <ul>
-          <li>Craft Estate – Chef de partie (ต.ค. 2566 – ต.ค. 2567)</li>
-          <li>Bulwark – Chef de partie (พ.ย. 2564 – ก.ย. 2566)</li>
-          <li>The Salares Coffee Bar – Chef de partie (มี.ค. 2563 – ก.ย. 2564)</li>
-          <li>บิสโทร เดอ ฟลอร่า – Chef de partie (ก.ค. 2560 – ธ.ค. 2562)</li>
-          <li>ฟาร์มรักดี – Head Chef (ก.พ. 2558 – พ.ค. 2560)</li>
+          <li><strong>Craft Estate – Chef de partie</strong><br>
+            • ระยะเวลา: 5 ต.ค. 2566 – 31 ต.ค. 2567 ( 1 ปี )<br>
+            • ควบคุมคุณภาพอาหาร, จัดเตรียมวัตถุดิบ, สนับสนุนทีมครัว</li>
+          <li><strong>Bulwark – Chef de partie</strong><br>
+            • ระยะเวลา: 2 พ.ย. 2564 – 30 ก.ย. 2566 ( 1 ปี 10 เดือน )<br>
+            • ตรวจสอบความเรียบร้อย, จัดการวัตถุดิบ, ระบบสต๊อก</li>
+          <li><strong>The Salares Coffee Bar – Chef de partie</strong><br>
+            • ระยะเวลา: 1 มี.ค. 2563 – 30 ก.ย. 2564 ( 1 ปี 6 เดือน )<br>
+            • อาหารยุโรป, มาตรฐานร้าน</li>
+          <li><strong>บิสโทร เดอ ฟลอร่า – Chef de partie</strong><br>
+            • ระยะเวลา: 1 ก.ค. 2560 – 31 ธ.ค. 2562 ( 2 ปี 6 เดือน)<br>
+            • อาหารอิตาเลียน, ทำซอส, จัดจาน, ประสานงาน</li>
+          <li><strong>ฟาร์มรักดี – Head Chef</strong><br>
+            • ระยะเวลา: 6 ก.พ. 2558 – 31 พ.ค. 2560 ( 2 ปี 3 เดือน )<br>
+            • วางแผนเมนู, ควบคุมต้นทุน, ทีมครัวทั้งหมด</li>
         </ul>
       </div>
 
@@ -66,25 +155,34 @@
         </ul>
       </div>
 
-      <div class="section">
-        <h3>ทักษะเพิ่มเติม</h3>
-        <ul>
-          <li>Microsoft Excel / คำนวณต้นทุน</li>
-          <li>จัดทำ Recipe มาตรฐาน</li>
-          <li>ภาษา</li>
-        </ul>
-        <div class="language-skill">
-          <p>- ไทย</p>
-          <div class="level">
-            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
-          </div>
-          <p>- อังกฤษ</p>
-          <div class="level">
-            <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
-          </div>
-        </div>
-      </div>
+<div class="section">
+  <h3>ทักษะเพิ่มเติม</h3>
+  <ul>
+    <li>Microsoft Excel / คำนวณต้นทุน</li>
+    <li>จัดทำ Recipe มาตรฐาน</li>
+    <li>ภาษา</li>
+  </ul>
+  <div class="language-skill">
+    <p>- ไทย</p>
+    <div class="level">
+      <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+    </div>
+    <p>- อังกฤษ</p>
+    <div class="level">
+      <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span><span class="dot"></span>
     </div>
   </div>
+</div>
+
+<div class="section">
+  <h3>งานอดิเรก</h3>
+  <ul>
+    <li>ทดลองสูตรอาหารใหม่</li>
+    <li>อ่านหนังสือเกี่ยวกับวัตถุดิบ</li>
+  </ul>
+</div>
+
+</div> <!-- ปิด .resume-content -->
+</div> <!-- ปิด .container -->
 </body>
 </html>
